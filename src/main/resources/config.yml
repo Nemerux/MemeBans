@@ -1,0 +1,30 @@
+## MemeBans - nie dojebany plugin na bany.
+
+database: # Baza danych, jak tego nie zmienisz to ci plugin nie bedzie dzialal
+  ip: localhost
+  port: 3306
+  user: root
+  password: ''
+  name: database
+
+ban: # Dostepne zmienne: {PLAYER}, {ADMIN}, {BAN_TIME}, {UNBAN_TIME}, {REASON}
+  message:
+    - "&7Gracz &b{PLAYER} &7zostal zbanowany przez admina &b{ADMIN}&7!"
+  format:
+    - "&cmasz bana typie"
+    - "&cpowod: &7{REASON}"
+    - "&cunban: &7{UNBAN_TIME}"
+    - "&cbtw &7{ADMIN} &cdal ci banicje"
+  join_message:
+    - "&7Gracz &b{PLAYER} &7proboje wbic, ale jest zbanowany!"
+  unban:
+    - "&7Gracz &b{PLAYER} &7zostal odbanowany!"
+mute: # Dostepne zmienne: {PLAYER}, {ADMIN}, {MUTE_TIME}, {UNMUTE_TIME}, {REASON}, {MESSAGE} (tylko dla chat)
+  message:
+    - "&7Gracz &b{PLAYER} &7zostal wyciszony przez admina &b{ADMIN}&7!"
+  format:
+    - "&7Nie mozesz pisac na chatcie, poniewaz jestes wyciszony!"
+  chat:
+    - "&7[WYCISZONY] {PLAYER}: {MESSAGE}"
+  unmute:
+    - "&7Gracz &b{PLAYER} &7zostal odciszony!"

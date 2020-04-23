@@ -1,0 +1,8 @@
+name: MemeBans
+version: ${project.version}
+main: pl.memexurer.memebans.MemeBansPlugin
+commands:
+  ban:
+  mute:
+  unban:
+  unmute:
